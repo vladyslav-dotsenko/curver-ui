@@ -1,0 +1,44 @@
+Technology stack:
+  ☐ React
+  ☐ Redux
+  ☐ SVG (as rendering method)
+  ☐ Bezier curves
+
+
+Supported platforms:
+  ☐ Desktop browsers -- fluent support of latest browsers
+  ☐ Mobile browsers -- disable rendering, ask for switching to desktop
+
+
+Glossary:
+  Feel free to fill this glossary with new terms and links
+  for easy knowledge transfer and more strict definitive communication.
+  Bezier Curve:
+    https://en.wikipedia.org/wiki/B%C3%A9zier_curve
+  Control Node:
+    Point on the visual graph that determines form of resulting curve
+    Can be dragged, added or removed
+    Splits overall curve on 2 separate Bezier curves
+  Control Node Core:
+    Central point of control node
+    This is actually END-point of left curve and START-point of right curve
+  Control Node Satellite:
+    An additional control in some RADIUS from Control Node Core
+    Defines a virtual controls of both left and right Bezier curves
+
+
+Tasks:
+  ☐ Checkpoint 1: Single Bezier curve drawer
+    ☐ Create React project + Redux
+    ☐ Find a reactive solution for SVG management (or simply use it manually as JSX, whatever)
+    ☐ Create parametrized component that draws single Bezier curve
+    ☐ Create parametrized component that draws single Control Node
+    ☐ Create parametrized component that draws Control Node Satellite
+    ☐ Add user-interaction to all parametrized components
+      ☐ ... plan this up yourself when you're ready, @Egor
+  ☐ Checkpoint 2: Curves sequence editor
+    ☐ Add possibility to create new Control Points
+    ☐ Add possibility to remove Control Points
+  ☐ Checkpoint 3: Real-time curve serializing
+  ☐ Checkpoint 4: Linear Graph and Ladder Graph builder modes
+  ☐ Checkpoint 5: Final UI release
